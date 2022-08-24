@@ -5441,8 +5441,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acbc6027d0c953842836d00ec2d00de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _amount: {fileID: 2035485098}
-  _defficulty: {fileID: 1722602718}
+  _amountSlider: {fileID: 2035485098}
+  _defficultySlider: {fileID: 1722602718}
   _maxOfAmount: {fileID: 2041431703}
   _maxOfDefficulty: {fileID: 49426358}
   _timerText: {fileID: 1508240082}
@@ -5452,7 +5452,7 @@ MonoBehaviour:
   _failPanel: {fileID: 560300051}
   _saccessPanel: {fileID: 2129791663}
   _startButton: {fileID: 639212150}
-  _number: {fileID: 3927852125212148605, guid: ea2e4bb99fc85074497b723878193ec5, type: 3}
+  _number: {fileID: 7453078889842488439, guid: ea2e4bb99fc85074497b723878193ec5, type: 3}
 --- !u!1 &2035485096
 GameObject:
   m_ObjectHideFlags: 0

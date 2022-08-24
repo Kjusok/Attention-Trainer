@@ -1,23 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Number : MonoBehaviour
 {
     [SerializeField] private Vector2 _position;
 
-    public Text TextNumber;
-    private int _currentNameOFNumber;
+    private Action<int> _clickHandler;
+    private int _number;
 
-    private void OnMouseDown()
+    public Text TextNumber;
+    public void OnMouseDownOnNumber()
     {
-        GameObject gameManager = GameObject.FindGameObjectWithTag("GameManager");
-        gameManager.gameObject.GetComponent<GameManager>().CheckCorectSubsequence(_currentNameOFNumber);
+        _clickHandler(_number);
         Destroy(gameObject);
     }
-    private void Start()
+    public void Initialize(int number, Action<int> clickHandler)
     {
-        _currentNameOFNumber = int.Parse(TextNumber.text);
+        _number = number;
+        TextNumber.text = number.ToString();
+        _clickHandler = clickHandler;
     }
 }
